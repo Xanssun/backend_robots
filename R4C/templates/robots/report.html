@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Страница для директора</title>
+</head>
+<body>
+    <h1>Скачать отчет по всем роботам</h1>
+    <form method="post" action="{% url 'download' %}">
+        {% csrf_token %}
+        <button type="submit">Скачать</button>
+    </form>
+</body>
+</html>

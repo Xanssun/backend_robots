@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Главная страница</title>
+    <title>Форма</title>
 </head>
 <body>
-    <h1>Главная страница</h1>
-    <form method="post" action="{% url 'orders:download' %}">
+    <h1>Заполните Форму</h1>
+    <form method="post">
         {% csrf_token %}
-        <button type="submit">Скачать</button>
+        {{ form.as_p }}
+        <input type="submit" value="Создать Форму">
     </form>
 </body>
 </html>
