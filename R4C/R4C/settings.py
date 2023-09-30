@@ -133,7 +133,7 @@ EMAIL_PORT = 465
 EMAIL_USE_TLS = False  # Нам не нужно использовать TLS, так как мы используем SSL
 
 # Устанавливаем адрес, от которого будут отправляться письма
-DEFAULT_FROM_EMAIL = 'xans_sun@mail.ru'
+DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
 
 # Кодировка писем (UTF-8)
 EMAIL_CHARSET = 'UTF-8'
